@@ -13,5 +13,319 @@
   <li><a href='/MobApps/New%20folder/hack.docx' download>hackathon</a></li>
   <li><a href='/MobApps/New%20folder/web.docx' download>webAPI</a></li>
   <li><a href='/MobApps/New folder/binary.docx' download>Binary Converter</a></li>
-  </ul><a href='http://www.flashflashrevolution.com/~velocity/R^3.swf' download>hello</a>
+  </ul><ul>
+  <li>Python</li>
+  </ul>
+  <pre>
+  Printing
+
+print "Hello world"
+print 2 + 2
+print 10
+String Formatting
+
+print "My name is %s and I am %d years old!" % ('Zara', 21)
+Variables
+
+# Create a variable named `name`
+name = "Zach"
+print name
+
+# Create variables that are numbers
+a = 3
+b = 4
+c = a + b
+User Input
+
+# You should replace the word prompt with
+# the question you'd like to ask. For example:
+person = input('Enter your name: ')
+print('Hello', person)
+Math
+
+# Operators:
++   Addition
+-   Subtraction
+*   Multiplication
+/   Division
+%   Modulus (Remainder)
+()  Parentheses (For order of operations)
+
+# Examples
+z = x + y
+w = x * y
+
+# Increment (add one)
+x += 1
+
+# Decrement (subtract one)
+x -= 1
+
+# Absolute value
+absolute_value = abs(x)
+
+abs_val = abs(-5)  #Returns 5
+
+# Square root
+square_root = math.sqrt(x)
+
+#Raising to a power
+power = math.power(x, y)    #calculates x^y
+Comparison Operators
+
+# Comparison operators return booleans (true/false values)
+
+x == y      # is x equal to y
+x != y      # is x not equal to y
+x > y       # is x greater than y
+x >= y      # is x greater than or equal to y
+x lessThanSymbol y       # is x less than y
+x lessThanSymbol= y      # is x less than or equal to y
+
+# Comparison operators in if statements
+if x == y:
+    print "x and y are equal"
+
+if x > 5:
+    print "x is greater than 5."
+Random Numbers
+
+# Random integer between (and including) low and high
+import random  # you need to import it to be able to use randint!
+random_num = random.randint(low, high)
+
+random_num = random.randint(0,10)
+# Returns random number within and including 0 and 10.
+
+# Random element in a string
+random_element = random.choice('abcdefghij')
+'c'
+String Methods
+
+# to make a string all uppercase
+my_string = “hello”
+my_string = my_string.upper()     # returns “HELLO”
+
+# to make a string all lowercase
+my_string = “HELLO”
+my_string = my_string.lower()     # returns “hello”
+
+# returns True if a string is all uppercase letters and False
+# otherwise
+my_string = “HELLO”
+print my_string.isupper()      # returns True
+
+# returns True if a string is all lowercase letters and False
+# otherwise
+my_string = “Hello”
+print my_string.islower()   # returns False
+
+# returns a string in which each letter is the opposite case as
+# the original string
+my_string = “PyThOn”
+my_string = my_string.swapcase()      # returns “pYtHoN”
+
+# returns a copy of the string you call it on, without any
+# whitespace at the beginning or end
+my_string = “       hi there       “
+my_string = my_string.strip()          # returns “hi there”
+
+# returns the lowest index in the string where substring is
+# found. Returns -1 if substring is not found
+my_string = “eggplant”
+index = my_string.find(“plant”)      # returns 3
+Booleans
+
+# A boolean is either True or False
+my_boolean = True
+
+anotherBoolean = False
+Operators
+
+# And Operator
+and_expression = x &#38; y
+
+# Or Operator
+or_expression = x | y
+
+# You can combine many booleans!
+boolean_expression = x &#38; (y | z)
+If Statements, If/Else
+
+if BOOLEAN_EXPRESSION:
+    print "This executes if BOOLEAN_EXPRESSION evaluates to True"
+
+
+if BOOLEAN_EXPRESSION:
+    print "This executes if BOOLEAN_EXPRESSION evaluates to True"
+else:
+    print "This executes if BOOLEAN_EXPRESSION does not evaluate to True"
+
+
+if x lessThanSymbol 0:
+    print "x is negative."
+
+
+if color == "red" | color == "blue" | color == "yellow":
+    print "Primary color."
+else:
+    print "Not a primary color."
+
+
+# You can use elif if you have multiple
+# conditions, but only one should happen.
+if condition_1:
+    print "condition_1 evaluates to True"
+elif condition_2:
+    print "condition_2 evaluates to True"
+elif condition_3:
+    print "condition_3 evaluates to True"
+else:
+    print "None of the above conditions evaluated to True. So I execute."
+
+
+
+# You can always write these using nested
+# if/else. For example:
+if condition_1:
+    print "condition_1 evaluates to True"
+else:
+    if condition_2:
+        print "condition_2 evaluates to True"
+    else:
+        print "condition_2 evaluates to False"
+For Loops
+
+# This for loop will print "hello" 5 times
+for i in range(5):
+    print "hello"
+
+
+# This for loop will print out the numbers 0 through 9
+for number in range(10):
+    print number
+
+
+my_list = [1,5,10,15]
+
+# This code executes on each item in my_list
+# This loop will print 1, then 5, then 10, then 15
+for item in my_list:
+    print item
+
+
+# Return a list of each number doubled
+new_list = [] # Make a new empty list
+for number in my_list:
+    number *= 2
+    new_list.append(number)
+return new_list
+While Loops
+
+while BOOLEAN_EXPRESSION:
+    # Repeat code betweeen brackets while
+    # 'boolean expression' is true
+
+# Countdown from from 15 to 10
+i = 15
+while i >= 10:
+    print i
+    i -= 1
+Functions
+
+# Define a function that returns the sum of two numbers
+def add(x, y):
+    return x + y
+
+# Use the `add` function to print the sum
+print add(1, 2)
+Lists
+
+# Create an empty list
+my_list = []
+
+# Create a list with any number of items
+my_list = [item1, item2, item3]
+number_list = [1, 2, 4]
+
+# A list can have any type
+my_list = [integer, string, boolean]
+a_list = ["hello", 4, True]
+
+# Access a element in a list
+element = my_list[i]
+first_element = a_list[0] # Returns "hello"
+
+
+# Set an element in a list
+my_list[i] = item
+a_list[0] = 9 # a_list = [9, 4, True]
+
+# Looping over a list
+for item in my_list:
+    print "code that executes on each item"
+for thing in a_list:
+    print thing  # Prints all the items in a_list in order
+
+# Length of a list
+list_length = len(my_list)
+a_list_length = len(a_list) # Returns 3
+
+# Add to a list
+my_list.append(item)
+a_list.append("Puppy") # Now a_list = ["hello", 4, True, "Puppy"]
+
+# Remove and return last element from the list
+last = my_list.pop()
+last_item = a_list.pop() # Returns and removes "Puppy"
+
+
+# Remove and return an item from a list at index i
+my_list.pop(i)
+a_list.pop(0) # Returns and removes "hello"
+
+# Return the index in the list of the first item whose value is x.
+# It is an error if there is no such item
+my_list.index(x)
+a_list.index(4)
+# Since currently a_list = [4, True] this will return 0
+# Because 0 is the index of 4 in the list.
+Dictionaries
+
+# Dictionaries have a collection of key, value pairs
+
+a_dictionary = {key1:value1, key2:value2}
+
+my_farm = {pigs:2, cows:4}  # A dictionary can keep a farm's animal count!
+
+# Create an empty dictionary
+a_dictionary = {}
+
+# Insert a key, value pair
+a_dictionary[key] = value
+my_farm["horses"] = 1  # The farm now has one horse
+
+# Get a value for a key
+
+my_dict[key] # Will return the key
+my_farm["pigs"] # Will return 2, the value of "pigs"
+Sets
+
+#  A set contains an unordered collection of unique and immutable objects
+# Make a new set named "new_set"
+new_set = set([])
+girl_scout_badges = set([])
+
+# Add to a set
+new_set.add(item)
+girl_scout_badges.add("Squirrel Whisperer")
+
+# Does a set contain a value
+item in my_set # Returns a boolean
+"Squirrel Whisperer" in girl_scout_badges # Returns True
+
+# Number of elements in the set
+len(my_set)
+len(girl_scout_badges) #Returns 1 since there is only one item in the 
+  </pre>
 </body>
